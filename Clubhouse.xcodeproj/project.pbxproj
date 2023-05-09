@@ -13,9 +13,11 @@
 		BBE50AB32A0AB71B00033DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE50AB12A0AB71B00033DBF /* Main.storyboard */; };
 		BBE50AB52A0AB71C00033DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE50AB42A0AB71C00033DBF /* Assets.xcassets */; };
 		BBE50AB82A0AB71C00033DBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE50AB62A0AB71C00033DBF /* LaunchScreen.storyboard */; };
+		CF63E56E99C6841128700C1E /* Pods_Clubhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA750DF5F360B50FEBEDC8E /* Pods_Clubhouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AA750DF5F360B50FEBEDC8E /* Pods_Clubhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clubhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE50AA82A0AB71B00033DBF /* Clubhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clubhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE50AAB2A0AB71B00033DBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE50AAD2A0AB71B00033DBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		BBE50AB42A0AB71C00033DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBE50AB72A0AB71C00033DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE50AB92A0AB71C00033DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FD54BE3C3D2191CA7DD235 /* Pods-Clubhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clubhouse.debug.xcconfig"; path = "Target Support Files/Pods-Clubhouse/Pods-Clubhouse.debug.xcconfig"; sourceTree = "<group>"; };
+		E8F483CED7F5F49567976972 /* Pods-Clubhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clubhouse.release.xcconfig"; path = "Target Support Files/Pods-Clubhouse/Pods-Clubhouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF63E56E99C6841128700C1E /* Pods_Clubhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10AE72EB9E1C76EF7A4CB851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5FD54BE3C3D2191CA7DD235 /* Pods-Clubhouse.debug.xcconfig */,
+				E8F483CED7F5F49567976972 /* Pods-Clubhouse.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4F0FA0F493A0A7A17AD096F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AA750DF5F360B50FEBEDC8E /* Pods_Clubhouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBE50A9F2A0AB71B00033DBF = {
 			isa = PBXGroup;
 			children = (
 				BBE50AAA2A0AB71B00033DBF /* Clubhouse */,
 				BBE50AA92A0AB71B00033DBF /* Products */,
+				10AE72EB9E1C76EF7A4CB851 /* Pods */,
+				B4F0FA0F493A0A7A17AD096F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE50ABC2A0AB71C00033DBF /* Build configuration list for PBXNativeTarget "Clubhouse" */;
 			buildPhases = (
+				3EC3E9F348E99C2D39932F06 /* [CP] Check Pods Manifest.lock */,
 				BBE50AA42A0AB71B00033DBF /* Sources */,
 				BBE50AA52A0AB71B00033DBF /* Frameworks */,
 				BBE50AA62A0AB71B00033DBF /* Resources */,
+				632E9759D029C0B09536EB3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EC3E9F348E99C2D39932F06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clubhouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		632E9759D029C0B09536EB3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clubhouse/Pods-Clubhouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clubhouse/Pods-Clubhouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clubhouse/Pods-Clubhouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE50AA42A0AB71B00033DBF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		BBE50ABD2A0AB71C00033DBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FD54BE3C3D2191CA7DD235 /* Pods-Clubhouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		BBE50ABE2A0AB71C00033DBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F483CED7F5F49567976972 /* Pods-Clubhouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
